@@ -66,7 +66,8 @@ function App() {
           <td>{contact.created_at}</td>
           <td className='action_buttons'>
             <button className='edit_button'>editar</button>
-            <button onClick={() => {setContacts(contacts.filter(user => user.id !== contact.id)); mutable_data.filter(user => user.id !== contact.id);console.log(contacts);console.log(mutable_data)}} className='delete_button'>excluir</button>
+            <button onClick={() => {setContacts(contacts.filter(user => user.id !== contact.id));
+               mutable_data.filter(user => user.id !== contact.id);}} className='delete_button'>excluir</button>
           </td>
         </tr>
       ))}
